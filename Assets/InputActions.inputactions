@@ -1,0 +1,60 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "Controllers",
+            "id": "e3f4c802-b141-49de-aaa3-3830aac85628",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "c27d2ea7-6632-4d18-8122-3f81961371e9",
+                    "expectedControlType": "Vector2",
+                    "processors": "NormalizeVector2",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "140d624d-2d14-4ae7-a56d-d5fdda4cd51d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8a8110e1-7dcb-4e2f-b169-4fc6a13ea745",
+                    "path": "<AndroidJoystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "ControllersScheme",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "58ba8d0d-6847-40a6-bba7-9243c5913855",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "ControllersScheme",
+            "bindingGroup": "ControllersScheme",
+            "devices": []
+        }
+    ]
+}

@@ -4,16 +4,17 @@ namespace _Root.Code.MoveFeature
 {
     public class MoveBehaviour
     {
-        private Transform _transform;
+        private Rigidbody2D _rigidbody;
 
-        public MoveBehaviour(Transform transform)
+        public MoveBehaviour(Rigidbody2D rigidbody)
         {
-            _transform = transform;
+            _rigidbody = rigidbody;
         }
 
-        public void Move(Vector2 direction, float speed, float deltaTime)
+        public void Move(Vector2 direction, float speed)
         {
-            _transform.Translate(direction * deltaTime * speed);
+            var movePosition = direction * speed;
+            _rigidbody.velocity = movePosition;
         }
     }
 }

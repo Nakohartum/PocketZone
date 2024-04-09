@@ -7,12 +7,16 @@ namespace _Root.Code.Input
         [field: SerializeField] public Rigidbody2D Rigidbody { get; private set; }
         [field: SerializeField] public Animator Animator { get; private set; }
         [field: SerializeField] public Transform WeaponPosition { get; private set; }
-        [field: SerializeField] public WeaponSo Weapon { get; private set; }
+        [field: SerializeField] public Transform WeaponRotation { get; private set; }
+        [field: SerializeField] public RangeDrawer RangeDrawer { get; private set; }
+        [field: SerializeField] public SpriteRenderer SpriteRenderer { get; private set; }
 
-        public void SetWeapon(WeaponSo weaponSo)
+        public PlayerModel PlayerModel { get; private set; }
+
+
+        public void InitializeView(PlayerModel playerModel)
         {
-            Weapon = weaponSo;
+            PlayerModel = playerModel;
         }
-        
     }
 }

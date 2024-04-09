@@ -11,7 +11,9 @@ namespace _Root.Code.Input
         public bool InfiniteAmmo;
         public float MaxClip;
         public float Clip;
+        public float Radius;
         public ParticleSystem ShootingSystem;
+        public TrailPool Pool;
 
         public void InitializeWeapon(WeaponSo weaponSo)
         {
@@ -22,6 +24,8 @@ namespace _Root.Code.Input
             MaxClip = weaponSo.Clip;
             Ammo = MaxAmmo;
             Clip = MaxClip;
+            Radius = weaponSo.Range;
         }
+        
     }
 }

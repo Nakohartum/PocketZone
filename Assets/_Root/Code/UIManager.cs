@@ -1,5 +1,7 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace _Root.Code
@@ -7,7 +9,10 @@ namespace _Root.Code
     public class UIManager : MonoBehaviour
     {
 
-        public Image WeaponAmmoes;
+        [Header("Weapon UI")]
+        public Image CurrentAmmoBar;
+
+        public TMP_Text AmmoText;
         
         
         private static UIManager _instance;

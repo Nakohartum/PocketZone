@@ -8,5 +8,7 @@ namespace _Root.Code.ScriptableObjectsCode
     {
         public Player PlayerPrefab;
         public WeaponSo InitialWeapon;
+        public float Speed;
+        public float MaxHealth;
     }
 }

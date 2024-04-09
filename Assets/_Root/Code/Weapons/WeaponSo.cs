@@ -10,6 +10,7 @@ namespace _Root.Code.Input
         public int Ammo;
         public bool InfiniteAmmo;
         public float Clip;
+        public float Range;
 
         public Weapon WeaponPrefab;
     }
